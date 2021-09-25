@@ -32,3 +32,10 @@ For run with console input:
 For run with txt file:
 
     python directories.py example.txt
+
+# Testing
+
+For run tests:
+
+    python -m pip install -U -r requirements.txt
+    pytest --cov=directories --cov-report term-missing
