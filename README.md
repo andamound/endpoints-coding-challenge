@@ -1,5 +1,10 @@
 # Directory tree
 
+<a href="https://codecov.io/gh/andamound/endpoints-coding-challenge">
+    <img src="https://codecov.io/gh/andamound/endpoints-coding-challenge/branch/main/graph/badge.svg?token=CUCPT5N04G" alt="Coverage"/>
+</a>
+
+
 Application for simple directories management.
 
 The key features are:
