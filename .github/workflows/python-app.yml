@@ -31,4 +31,9 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
     - name: Test with pytest
       run: |
-        pytest --cov=directories --cov-report term-missing
+        pytest --cov=directories --cov-report term-missing --cov-report=xml
+
+    - name: "Upload coverage to Codecov"
+      uses: codecov/codecov-action@v2
+      with:
+        fail_ci_if_error: true
