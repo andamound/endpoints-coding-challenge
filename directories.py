@@ -51,7 +51,7 @@ class Explorer:
         """
         command = command.strip()
         if not command:
-            raise ExplorerError(f'Empty command')
+            raise ExplorerError('Empty command')
         action, *args = command.split()
         method = self.__commands.get(action.upper())
 
