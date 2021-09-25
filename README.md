@@ -1,5 +1,9 @@
 # Directory tree
 
+<a href="https://github.com/andamound/endpoints-coding-challenge/actions/workflows/test.yml">
+    <img src="https://github.com/andamound/endpoints-coding-challenge/actions/workflows/test.yml/badge.svg" alt="Test"/>
+</a>
+
 <a href="https://codecov.io/gh/andamound/endpoints-coding-challenge">
     <img src="https://codecov.io/gh/andamound/endpoints-coding-challenge/branch/main/graph/badge.svg?token=CUCPT5N04G" alt="Coverage"/>
 </a>
