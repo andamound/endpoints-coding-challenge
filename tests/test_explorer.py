@@ -154,9 +154,7 @@ def test_list(capsys, create_directories: List[str], expected_result: List[str])
     for directory in create_directories:
         explorer.create(directory)
     explorer.list()
-    expected_string = '\n'.join(expected_result)
-    if expected_string:
-        expected_string += '\n'
+    expected_string = ''.join([f'{command}\n' for command in expected_result])
     assert capsys.readouterr().out == expected_string
 
 

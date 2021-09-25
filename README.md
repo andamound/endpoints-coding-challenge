@@ -13,3 +13,13 @@ The key features are:
 
 ## Requirements
 Python 3.5+
+
+## Example
+
+For run with console input:
+
+    python directories.py
+
+For run with txt file:
+
+    python directories.py example.txt

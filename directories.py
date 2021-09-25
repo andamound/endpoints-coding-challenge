@@ -1,3 +1,4 @@
+import sys
 from typing import List
 
 
@@ -168,3 +169,38 @@ class Explorer:
         pretty_list = self.__get_pretty_list(self.__directories)
         for directory in pretty_list:
             print(directory)
+
+
+def read_from_input():
+    explorer = Explorer()
+    while True:
+        command = input()
+        if command.upper() == 'EXIT':
+            break
+        print(command.strip())
+        try:
+            explorer.parse(command)
+        except ExplorerError as e:
+            print(str(e))
+
+
+def read_from_file(file_path: str):
+    explorer = Explorer()
+    with open(file_path) as file:
+        for command in file:
+            print(command.strip())
+            try:
+                explorer.parse(command)
+            except ExplorerError as e:
+                print(str(e))
+
+
+def main():
+    if len(sys.argv) > 1:
+        read_from_file(sys.argv[1])
+    else:
+        read_from_input()
+
+
+if __name__ == "__main__":  # pragma: no cover
+    main()
